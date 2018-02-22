@@ -35,20 +35,20 @@ Ennek a feladatnak a célja, hogy a legfontosabb Docker parancsokat megismerjét
 2. Nézd meg milyen image-ek vannak már lehúzva a helyi registry-be.
 3. Húzz le egy cirros image-et (Ez egy lightweight linux). Próbáld ki az image keresést is.
 4. Indíts el egy az előbbi cirros image-ből készített container-t
-  1. Lépj be rá egy terminálba /bin/sh shell-be és győződj meg róla, hogy valóban egy izolált containerben vagy! (docker run -it kapcsolóra keress rá akár neten!)
-  2 Hasonlítsd össze a futó processzeket a containerben és a host gépen. (ps)
-5. Ellenőrizd a következőket a futó containerben
-  1. Mi a container host neve?
-  2. Milyen nameserver van beállítva?
-  3. Milyen hálózati interfészek vannak? 
-  4. Mi a gateway? 
-  5. Milyen IP-t kapott?   
-  6. Milyen a routing table? (pl. netstat -nr)
+  * Lépj be rá egy terminálba /bin/sh shell-be és győződj meg róla, hogy valóban egy izolált containerben vagy! (docker run -it kapcsolóra keress rá akár neten!)
+  * Hasonlítsd össze a futó processzeket a containerben és a host gépen. (ps)
+5. Ellenőrizd a következőket a futó containerben:
+  * Mi a container host neve?
+  * Milyen nameserver van beállítva?
+  * Milyen hálózati interfészek vannak? 
+  * Mi a gateway? 
+  * Milyen IP-t kapott?   
+  * Milyen a routing table? (pl. netstat -nr)
 6. Fusson a cirros konténer és nyomozd ki, hogy a HOST gépen (tehát a VirtualBox-os image-en) melyik fájlban tárolódik a container "/etc/hostname" fájlja!
 
 _Hint: ezek a parancsok lesznek hasznotokra: docker search, docker pull, docker run -it, docker ps, netstat -nr, docker inspect stb._
 ### Jegyzőkönyvhöz
-A jegyzőkönyvhöz másold ki egy text fájlba az utolsó pontra adott választ ill. hogy milyen paranccsal jöttél rá!
+A jegyzőkönyvhöz másold ki egy text fájlba az utolsó pontra adott választ ill. hogy melyik docker paranccsal jöttél rá!
 
 ---
 
@@ -59,16 +59,16 @@ A jegyzőkönyvhöz másold ki egy text fájlba az utolsó pontra adott választ
 Ennek a feladatnak a célja, hogy egy futó konténernek valahogy a hasznát is vegyük. 
 A feladat, hogy futtassatok Docker containerben egy web szervert. A host gépen megnyitva egy Firefoxot ezen az URL-en http://localhost írja ki, hogy Hello BME Paas labor!
 
-Javasolt web szerver: nginx
+Javasolt web szerver: nginx (de lehet más is)
 A következőket biztosan meg kell oldani:
 
-1. A konténer belső portjának megnyitása a host felé (docker run -p)
-2. Figyeljétek meg a konténer státuszát! élettartamát! Ha megváltoztattok benne pl. egy index.html-et és leállítjátok, akkor következő indításnál már nem lesz ott.
+1. A konténer belső portjának megnyitása a host felé (_docker run -p_)
+2. Figyeljétek meg a konténer státuszát! élettartamát! Ha megváltoztattok benne pl. egy index.html-et és leállítjátok, akkor következő indításnál már nem lesz ott. Miért? El lehet-e indítani egy korábban módosított containtert (docker ps -a)?
 3. (Opcionális) Esetleg köteg becsatolással is megoldható (docker run -v ...).
 
 _Hint: ezek a parancsok lesznek hasznotokra: docker run -p, stb._
 ### Jegyzőkönyvhöz
-A kulcs parancsokkal együtt egy 2-3 mondatos leírás legyen, hogy hogyan oldottátok meg.
+A legfontosabb parancsokkal együtt egy 2-3 mondatos leírás legyen, hogy hogyan oldottátok meg.
 
 ---
 
@@ -80,7 +80,7 @@ Futtassuk az előbbi konténert, ami kinyitja a 80-as portot és ellenőrizzük 
 
 1. Állítsd le az összes futó konténert.
 2. Ellenőrizd a host gépen, hogy milyen hálózati interfészek vannak.
-3. Indítsd el pl. az előbbi feladat konténerét úgy, hogy nyisson egy portot a hoszton.
+3. Indítsd el pl. az előbbi feladat konténerét úgy, hogy nyisson egy portot a hoston.
 4. Ellenőrizd a host gépen, hogy milyen hálózati interfészek vannak. Mi változott? Ellenőrizd a bridge-ket is!
 5. Próbáld ki a docker network inspect parancsot. Figyeld meg, hogy milyen konténerek csatlakoznak.
 6. Akár több konténert is indíthatsz és az előbbi pontokat megnézheted ismét.
