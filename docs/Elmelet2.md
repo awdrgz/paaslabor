@@ -51,3 +51,12 @@ docker ps|top     --futó konténerek
 docker inspect    --konténer futás idejű paramétereinek a lekérdezése
 docker start|stop --konténer indítása, leállítása
 ```
+
+## Docker ökoszisztéma
+- Docker Machine - Docker containerek futtatása virtuális gépeken
+- Docker Compose - Docker container stackek kezelése
+- Docker Swarm   - Docker container clusterezés
+
+## Docker GUI
+_docker container run -d -p 9000:9000 -v/var/run/docker.sock:/var/run/docker.sock portainer/portainer_
+http://localhost:9000 (passwd megadás, majd local, connect és voilá, van egy GUI a lokális docker környezet fölé)
