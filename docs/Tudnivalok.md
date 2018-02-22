@@ -12,7 +12,7 @@
 2. VirtualBox-ban:
 
 - File->Preferences->General->Default Machince folder beállítása: D:\Work\VirtualBox
-- Import Appliance: D:\VPCImages\PAAS\student.ova 
+- Import Appliance: D:\VPCImages\PAAS\student2018.ova 
 - Ellenőrizd a wizard utolsó lépésénél, hogy jó útvonal került-e be
 
 ## VirtualBox CentOS információk
@@ -107,6 +107,7 @@ dnsmasq config fájl: /etc/NetworkManager/dnsmasq.d
 
 ## OpenShift témához
 - OpenShift dashboard: https://bmepaas-master.openshift.local:8443
+- Lokális OpenShift elindítása: oc cluster up (kiírja az indítás után, hogyan érhető el)
 
 ## Jegyzőkönyv
 
