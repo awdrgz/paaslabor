@@ -29,19 +29,21 @@ ip link show
 **Időtartam: ~15 perc**
 
 ### Célja, leírás
-Ennek a feladatnak a célja, hogy a legfontosabb Docker parancsokat megismerjétek.
+Ennek a feladatnak a célja, hogy a legfontosabb Docker parancsokat megismerjétek. Ehhez a _docker help_ paranccsal mindent megtaláltok.
 
 1. Listázd az elérhető Docker parancsokat, ismerkedj meg a help-jével, hogy könnyen megtalálj majd mindent a későbbiekben.
 2. Nézd meg milyen image-ek vannak már lehúzva a helyi registry-be.
-3. Húzz le egy cirros image-et. Próbáld ki az image keresést is. (docker.io/cirros)
-4. Indítsd el az előbbi cirros image-ből készített container-t
+3. Húzz le egy cirros image-et (Ez egy lightweight linux). Próbáld ki az image keresést is.
+4. Indíts el egy az előbbi cirros image-ből készített container-t
   1. Lépj be rá egy terminálba /bin/sh shell-be és győződj meg róla, hogy valóban egy izolált containerben vagy! (docker run -it kapcsolóra keress rá akár neten!)
   2 Hasonlítsd össze a futó processzeket a containerben és a host gépen. (ps)
 5. Ellenőrizd a következőket a futó containerben
   1. Mi a container host neve?
   2. Milyen nameserver van beállítva?
-  3. Milyen hálózati interfészek vannak? Mi a gateway? Milyen IP-t kapott?
-  4. Milyen a routing table? (pl. netstat -nr)
+  3. Milyen hálózati interfészek vannak? 
+  4. Mi a gateway? 
+  5. Milyen IP-t kapott?   
+  6. Milyen a routing table? (pl. netstat -nr)
 6. Fusson a cirros konténer és nyomozd ki, hogy a HOST gépen (tehát a VirtualBox-os image-en) melyik fájlban tárolódik a container "/etc/hostname" fájlja!
 
 _Hint: ezek a parancsok lesznek hasznotokra: docker search, docker pull, docker run -it, docker ps, netstat -nr, docker inspect stb._
