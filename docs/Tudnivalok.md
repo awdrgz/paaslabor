@@ -115,6 +115,8 @@ dnsmasq config fájl: /etc/NetworkManager/dnsmasq.d
 
 # Otthon hogyan próbálhatom ki?
 Linuxon egyszerűbb, de nem kizárólagos platform!
+## Virtuális gép
+A gyakorlaton használt virtuális gépet is elvihetitek!
 ## Docker
 - Telepítsd fel és játsz vele (Linuxokra a csomagkezelőn keresztül vagy [innen](https://store.docker.com/search?offering=community&type=edition) mindenféle platformra) 
 - Vagy játsz vele [online](http://training.play-with-docker.com/)!
