@@ -112,3 +112,15 @@ dnsmasq config fájl: /etc/NetworkManager/dnsmasq.d
 ## Jegyzőkönyv
 
 **A jegyzőkönyvhöz menet közben gyűjtsd az anyagokat (külön jelölve van, hogy mikor mit), hogy a kitöltésnél már minden infó meglegyen.**
+
+# Otthon hogyan próbálhatom ki?
+Linuxon egyszerűbb, de nem kizárólagos platform!
+## Docker
+- Telepítsd fel és játsz vele (Linuxokra a csomagkezelőn keresztül vagy (innen)[https://store.docker.com/search?offering=community&type=edition] mindenféle platformra) 
+- Vagy játsz vele (online)[http://training.play-with-docker.com/]!
+## Kubernetes
+- Natív Kubernetes telepítés Linuxon
+- (Minikube)[https://github.com/kubernetes/minikube]
+## Openshift
+- oc cluster up (itt)[https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md]
+- (Minishift)[https://github.com/minishift/minishift]
