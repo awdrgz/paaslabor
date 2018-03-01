@@ -6,11 +6,10 @@
 [Minden további tudnivaló itt](docs/Tudnivalok.md)
 
 ## Jegyzőkönyv
-Az értékelés/érdemjegy alapja, mindenki töltse ki és küldje el az email címével.
+Az értékelés/érdemjegy alapja az alábbi beküldött Google Forms jegyzőkönyv, mindenki töltse ki és küldje el az email címével.
 A jegyzőkönyvben tesztkérdések és a gyakorlatok anyagaiból felmásolandó feladatok is vannak. Érdemes menet közben tölteni és egy külön dokumentumban külön is tárolni, nehogy elvesszen, vagy később is be tudjátok küldeni!
  
 [Kitöltendő jegyzőkönyv](https://goo.gl/forms/MYJ79Jv5HY3Ynn2y2)
-
 
 **A jegyzőkönyvet a labor hetének a végéig (vasárnap 23:59-ig) küldjétek be!**
 
