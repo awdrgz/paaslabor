@@ -64,7 +64,7 @@ A következőket biztosan meg kell oldani:
 
 1. A konténer belső portjának megnyitása a host felé (_docker run -p_)
 2. Figyeljétek meg a konténer státuszát! élettartamát! Ha megváltoztattok benne pl. egy index.html-et és leállítjátok, akkor következő indításnál már nem lesz ott. Miért? El lehet-e indítani egy korábban módosított containtert (docker ps -a)?
-3. (Opcionális) Esetleg köteg becsatolással is megoldható (docker run -v ...).
+3. (Opcionális) Esetleg köteg becsatolással is megoldható a feladat, így a host-on lehet az index.html (docker run -v ...).
 
 _Hint: ezek a parancsok lesznek hasznotokra: docker run -p, stb._
 ### Jegyzőkönyvhöz
