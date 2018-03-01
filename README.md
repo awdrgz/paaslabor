@@ -17,11 +17,16 @@ A jegyzőkönyvben tesztkérdések és a gyakorlatok anyagaiból felmásolandó 
 # Célkitűzés, tematika
 A labor célja a következő témák áttekintése:
 - **Alapműveletek konténerben futtatott alkalmazásokkal**: 
-  - Docker konténer létrehozása dockerfile vagy Docker Hub image alapján, Docker registry vizsgálata,  a hoszt és a konténer kapcsolódásának vizsgálata (folyamat-azonosítók, portok, névterek), parancs futtatása a konténerben
-- **OpenShift deploymentek kezelése**: github-ra feltöltött egyszerű projektből OpenShift image és deployment fordítása, telepítése, a pod-ok vizsgálata, kommunikáció a külvilág és a PaaS-ra telepített alkalmazás között (service-ek és route-ok vizsgálata)
-- OpenShift pod-ok skálázása: a PaaS-ra telepített alkalmazáshoz terhelést generálunk, majd megvizsgáljuk az automatikus és a manuális lehetőségeket az alkalmazásunkat futtató pod-ok skálázására.
-- Hálózati kommunikáció vizsgálata az OpenShift pod-ok között: elemezzük az OpenShift Software Defined Network működését, Wireshark segítségével végigkövetjük egy adatcsomag útját két pod között, továbbá áttekintjük az érintett hálózati protokollokat és virtualizációs technikákat (pl. VXLAN)
-
+  - Docker konténer létrehozása dockerfile vagy Docker Hub image alapján,
+  - Docker registry használata,  
+  - a hoszt és a konténer kapcsolódásának vizsgálata (folyamat-azonosítók, portok, névterek), 
+  - parancsok futtatása a konténerben,
+  - webszerver futtatása, elérése, módosítása.
+- **OpenShift**: 
+  - konténer orchestration, 
+  - deployment folyamatok,
+  - OpenShift architektúra áttekintése ,
+  - OpenShift alapfogalmak áttekintése(Service, Pod, Route).
 ---
 
 # Elméleti áttekintés
