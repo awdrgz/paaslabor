@@ -64,7 +64,7 @@ A következőket biztosan meg kell oldani:
 
 1. A konténer belső portjának megnyitása a host felé (_docker run -p_)
 2. Figyeljétek meg a konténer státuszát! élettartamát! Ha megváltoztattok benne pl. egy index.html-et és leállítjátok, akkor következő indításnál már nem lesz ott. Miért? El lehet-e indítani egy korábban módosított containtert (docker ps -a)?
-3. (Opcionális) Esetleg köteg becsatolással is megoldható a feladat, így a host-on lehet az index.html (docker run -v ...).
+3. (Opcionális) Esetleg köteg becsatolással is megoldható (docker run -v ...).
 
 _Hint: ezek a parancsok lesznek hasznotokra: docker run -p, stb._
 ### Jegyzőkönyvhöz
@@ -79,11 +79,12 @@ A legfontosabb parancsokkal együtt egy 2-3 mondatos leírás legyen, hogy hogya
 Futtassuk az előbbi konténert, ami kinyitja a 80-as portot és ellenőrizzük a hálózati működést.
 
 1. Állítsd le az összes futó konténert.
-2. Ellenőrizd a host gépen, hogy milyen hálózati interfészek vannak.
+2. Ellenőrizd, listázd a host gépen, hogy milyen hálózati interfészek vannak.
 3. Indítsd el pl. az előbbi feladat konténerét úgy, hogy nyisson egy portot a hoston.
-4. Ellenőrizd a host gépen, hogy milyen hálózati interfészek vannak. Mi változott? Ellenőrizd a bridge-ket is!
-5. Próbáld ki a docker network inspect parancsot. Figyeld meg, hogy milyen konténerek csatlakoznak.
-6. Akár több konténert is indíthatsz és az előbbi pontokat megnézheted ismét.
+4. Ellenőrizd, listázd a host gépen, hogy milyen hálózati interfészek vannak. Mi változott? 
+   - Ellenőrizd a bridge-ket is!
+5. Próbáld ki a docker network inspect parancsot. Figyeld meg, hogy milyen konténerek csatlakoznak a docker0 bridge-hez.
+   - Akár több konténert is indíthatsz és az előbbi pontokat megnézheted ismét.
 
 _Hint: ezek a parancsok lesznek hasznotokra: docker network, brctl, ifconfig_
 ### Jegyzőkönyvhöz
