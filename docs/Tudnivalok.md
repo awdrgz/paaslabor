@@ -126,3 +126,8 @@ A gyakorlaton használt virtuális gépet is elvihetitek!
 - [Minishift](https://github.com/minishift/minishift)
 ## Openshift tanfolyam
 - https://learn.openshift.com
+
+## Hasznos linkek, blogok
+- http://www.opensourcerers.org/tag/openshift/ 
+- http://training.play-with-docker.com/
+- https://learn.openshift.com
