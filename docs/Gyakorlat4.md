@@ -17,9 +17,7 @@
 Ennek a feladatnak a célja, hogy feltérképezzétek a hálózati forgalmat az OpenShift SDN-en belül.
 
 1. Telepíts egy tetszőleges olyan alkalmazást, amely HTTP forgalmat fogad, mindenképp legyen egy böngészőből megszólítható alkalmazásod a PaaS-ban. Lehet az előző feladatokból megmaradt alkalmazás!
-2. A böngésződből az alkalmazás felé küldött HTTP kérés pontosan milyen hálózati eszközökön keresztül érkezik el az alkalmazáshoz?
-
-http://www.opensourcerers.org/tag/openshift/   
+2. A böngésződből az alkalmazás felé küldött HTTP kérés pontosan milyen hálózati eszközökön keresztül érkezik el az alkalmazáshoz?  
 
 _Hint: ifconfig, ip a, ip route get, mtr, brctl show, ovs_
 
