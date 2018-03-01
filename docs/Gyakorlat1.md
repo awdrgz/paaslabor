@@ -26,7 +26,7 @@ ip link show
 ---
 
 ## Feladat 1. - Docker alapműveletek 
-**Időtartam: ~15 perc**
+**Időtartam: ~15-30 perc**
 
 ### Célja, leírás
 Ennek a feladatnak a célja, hogy a legfontosabb Docker parancsokat megismerjétek. Ehhez a _docker help_ paranccsal mindent megtaláltok.
