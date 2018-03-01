@@ -94,13 +94,14 @@ Ennek a feladatnak a célja, hogy kipróbáljátok a PaaS-t. Hozzatok létre a p
 Javasolt minta: NodeJS vagy Java
 A következőkön haladjatok végig és a megjelölt adatokat gyűjtsétek be a jegyzőkönyvhöz:
 
-1. Hozzatok létre egy alkalmazást a saját useretekkel a Dashboardon (egyszerű legyen, ne perzisztens alkalmazást válasszatok). A kiválasztott Git projektet nézzétek át a github-os linkjén.
-2. Ellenőrizd, hogy böngészőből eléred az alkalmazást és működik-e!
-3. A bemutató alapján nézd végig a Dashboard-on, hogy mik is jöttek létre, milyen információkat látsz.
-4. Ugyanígy nézd át az oc CLI -vel is a projektetd, a POD-od, a service-t.
-5. Derítsd ki, hogy melyik Node-ra (gépre) települt ki és milyen IP-n port-on hallagatózik
+1. Hozzatok létre egy alkalmazást a saját useretekkel a Dashboardon. A kiválasztott Git projektet nézzétek át a github-os linkjén. Érdemes átnézni, megérteni, hogy mi is fog fordulni, települni.
+2. Kövsd a telepítési folyamatot. Build logokat érdemes megnézni.
+3. Ellenőrizd, hogy böngészőből eléred az alkalmazást és működik-e!
+4. A bemutató alapján nézd végig a Dashboard-on, hogy mik is jöttek létre, milyen információkat látsz.
+5. Ugyanígy nézd át az oc CLI -vel is a projektet, a POD-od, a service-t.
+6. Derítsd ki, hogy melyik Node-ra (gépre) települt ki és milyen IP-n port-on hallagatózik
 
 _Hint: ezek a parancsok lesznek hasznotokra: oc new-app, oc get pods, oc get svc stb._
 
 ### Jegyzőkönyvhöz
-Írd le az 5. pont eredményét és azt, hogy hogyan derítetted ki.
+Írd le a 6. pont eredményét és azt, hogy hogyan derítetted ki.
