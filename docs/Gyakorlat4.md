@@ -10,7 +10,7 @@
 - Mindenki a saját userét használja ezután, hogy izoláltan dolgozzatok!
 
 
-## Feladat 1. - OpenShift SDN hálózati forgalom mérése
+## Feladat 1. - OpenShift SDN hálózati forgalom
 **Időtartam: ~30 perc**
 
 ### Célja, leírás
