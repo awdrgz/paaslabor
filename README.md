@@ -16,13 +16,13 @@ A jegyzőkönyvben tesztkérdések és a gyakorlatok anyagaiból felmásolandó 
 ---
 # Célkitűzés, tematika
 A labor célja a következő témák áttekintése:
-- **Alapműveletek konténerben futtatott alkalmazásokkal**: 
+- **Alapműveletek konténerben futtatott alkalmazásokkal**
   - Docker konténer létrehozása dockerfile vagy Docker Hub image alapján,
   - Docker registry használata,  
   - a hoszt és a konténer kapcsolódásának vizsgálata (folyamat-azonosítók, portok, névterek), 
   - parancsok futtatása a konténerben,
   - webszerver futtatása, elérése, módosítása.
-- **OpenShift**: 
+- **OpenShift**
   - konténer orchestration, 
   - deployment folyamatok,
   - OpenShift architektúra áttekintése ,
