@@ -4,11 +4,13 @@
 [Fontos információk](Tudnivalok.md)
 
 **Fontos:**
-- OpenShift konvenviók:
- - Felhasználónevetek legyen: studentxy - ahol x y a nevetek kezdőbetűi pl. studentnz (kisbetűk)
- - Projektek nevei: gyakorlatNxy - N a gyakorlat száma, x, y lsd. előbb, pl. gyakorlat2nz (kisbetűk)
+- OpenShift konvenciók, ha a központi OpenShiftet használjátok:
+  - Felhasználónevetek legyen: studentxy - ahol x y a nevetek kezdőbetűi pl. studentnz (kisbetűk)
+  - Projektek nevei: gyakorlatNxy - N a gyakorlat száma, x, y lsd. előbb, pl. gyakorlat2nz (kisbetűk)
 - Mindenki a saját userét használja ezután, hogy izoláltan dolgozzatok!
 
+- Lokális OpenShift is használható a virtuális gépetekben!
+_oc cluster up_ paranccsal indul
 
 
 ## Telepített OpenShift áttekintése - vezetett bemutató
