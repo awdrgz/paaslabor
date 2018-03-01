@@ -124,3 +124,5 @@ A gyakorlaton használt virtuális gépet is elvihetitek!
 ## Openshift
 - oc cluster up [itt](https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md)
 - [Minishift](https://github.com/minishift/minishift)
+## Openshift tanfolyam
+- https://learn.openshift.com
