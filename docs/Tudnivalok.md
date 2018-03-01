@@ -10,19 +10,17 @@
 ### Virtuális gép importálása
 1. Hozd létre a D:\Work\VirtualBox könyvtárat (ha ott van már és nincs másnak a virtuális gépe benne, akkor törölj belőle mindent)
 2. VirtualBox-ban:
-
-- File->Preferences->General->Default Machince folder beállítása: D:\Work\VirtualBox
-- Import Appliance: D:\VPCImages\PAAS\student2018.ova 
+- Ellenőrizd: File->Preferences->General->Default Machince (Fájl->Beállítások->Általános->Alapértelmezett gép mappa) folder beállítása: D:\Work\VirtualBox
+- Import Appliance: D:\VPCImages\PAAS\student2018.ova
 - Ellenőrizd a wizard utolsó lépésénél, hogy jó útvonal került-e be
 
 ## VirtualBox CentOS információk
-- VirtualBox-ban indítsd el a CentOS image-et és ebben dolgozz!
-- itt aláljátok meg az image-et, amit importáljatok VirtualBox-ba:D:\VPCImages\PAAS
+- VirtualBox-ban indítsd el a CentOS image-et és ebben dolgozz végig!
 - CentOS Login: **BME Paas user / jelszó: paaslabor**
 - sudo használható (óvatosan azért :))
 - ha szükséged van esetleg a Linuxon valami package-re: sudo yum install -y XXXXXXXX
 - host gép könyvtárának mountolása: 
-1. hozz létre a VirtualBox-ban Devices/Shared Folders -ben egy foldert (géphez tartozó megosztások alá) pl. host néven, 
+1. hozz létre a VirtualBox-ban Devices/Shared Folders (Eszközök/Megosztott mappák) -ban egy foldert (géphez tartozó megosztások alá) pl. host néven, 
 2. majd a CentOS-ben ezt mountolhatod: sudo mount -t vboxsf host /media  (host a share neve)
 - Firefox a böngésző
 - érdemes beállítani VirtualBox-ban a bidirectional clipboard-ot hogy a copy-paste működjön
@@ -36,7 +34,7 @@ Mindenkinek készítenie kell egy GitHub-os account-ot, vagy a meglévőt haszn�
 1. https://github.com/
 2. Sign Up
 3. username pl. alerantbmexy, stb...., meg kell erősíteni a regisztrációt emailben kapott linken
-4. GitHub-on start project, pl. gyakorlat2
+4. GitHub-on start project-tel lehet új projektet létrehozni, pl. gyakorlat2
 
 A CentOS image-ben a ~/git könyvtárban tudtok dolgozni (több projekt is lesz)
 
@@ -56,7 +54,7 @@ Gyakorlatokban így klónozz le példákat:
 git clone https://github.com/bparees/openshift-jee-sample gyakorlat2
 git pull https://github.com/bparees/openshift-jee-sample gyakorlat2
 
-# ne az eredeti helyre tegyük vissza
+# ne az eredeti helyre tegyük vissza, hanem a saját userünk alá
 git remote set-url origin https://github.com/alerantbmenz/gyakorlat2.git
 
 # módosítások
