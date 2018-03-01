@@ -1,15 +1,14 @@
 # OpenShift áttekintés
 A Docker konténerek önmagukban még nem alkalmasak arra, hogy egy teljes PaaS megoldást nyújtsanak.
-Egy PaaS teljeskörű és transzparens infrastruktúrán nyújtja az alkalmazásfuttatási platformot.
 
-A következő problémákra kell még megoldás:
-- A különböző konténerek összekapcsolása, management-je fapados, ha csak a Docker-re építkezünk.
-- Nincs megoldva a skálázás(akár dinamikusan), failover, high-availability.
+A következő problémákra kell _még_ megoldás:
+- A különböző konténerek összekapcsolása, management-je fapados, ha csak a Docker-re építkezünk. (Scheduling)
+- Nincs megoldva a skálázás(akár dinamikusan), failover, high-availability. (Scaling)
 - Alkalmazás buildelési, deployálási folyamatok támogatása.
-- Tenant/Project izoláció.
+- Tenant/Project izoláció (egy PaaS megoldásban nem láthatják egymás erőforrásait/projektjeit/alkalmazásait)
 
 Ezekre a problémákra vannak létező megoldások, technológiák:
-- Kubernetes, Docker Compose, Docker swarm - konténer menedzsment
+- Kubernetes, Docker Compose, Docker Swarm - konténer menedzsment
 - Alkalmazásfejlesztési módszertanok, eszközök: Git vagy más SCM, Jenkins,...
 - Hálózati eszközök: Open vSwitch, Linux kernel technológiák
 - Monitorozás: Hawkular
@@ -95,9 +94,10 @@ oc new-app          --új alkalmazás létrehozása
 
 # OpenShift hálózati kommunikáció
 A következő hálózati problémákra ad megoldást az OpenShift
-- Routing: hogyan érhetőek el kívülről az alkalmazásaink
+- Routing: hogyan érhetőek el kívülről az alkalmazásaink a PaaS-on
 - Összetartozó Docker containerek (Pod-ok) hogyan kommunikáljanak egymással
 - Újrainduló Pod-ok változó IP címeinek lekövetése.
+- Projekt izoláció - nem láthatják egymást különböző projektek különböző alkalmazásai
 
 ![networking](../common/images/openshift_arch.png)
 ## Routing
