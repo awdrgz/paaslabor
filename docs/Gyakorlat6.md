@@ -1,4 +1,4 @@
-# Gyakorlat 6. - Alklmazásfejlesztés OpenShift platformon
+# Gyakorlat 6. - Alkalmazásfejlesztés OpenShift platformon
 
 ## Tudnivalók
 [Fontos információk](Tudnivalok.md)
@@ -58,6 +58,28 @@ oc rollout latest myapp
 oc patch dc myapp -p '{"spec":{"strategy":{"type":"Recreate"}}}'
 ```
 
+## Feladat 2. - Blue/Green, A/B, Canary deploymentek
+**Időtartam: ~10 perc**
+
+### Célja, leírás
+A gyakorlat célja, hogy kipróbáljátok a különböző deployment stratégiákat.
+
+**Deployment Triggerek**
+![XaaS](../common/images/abdeployment.png)
+A teljes alkalmazás stack ki van telepítve két példányban és egy paranccsal eldönthető, hogy éppen melyiket érjék el a végfelhasználók
+```shell
+
+oc login -u developer -p developer
+oc new-project gyakorlat7nz
+oc new-app https://github.com/devops-with-openshift/bluegreen#master --name=blue
+oc expose service blue --name=bluegreen
+
+oc new-app https://github.com/devops-with-openshift/bluegreen#green --name=green
+
+# route atallitasa
+oc patch route/bluegreen -p '{"spec":{"to":{"name":"green"}}}'
+
+```
 
 ### Jegyzőkönyvhöz
 Nincs feladat.
