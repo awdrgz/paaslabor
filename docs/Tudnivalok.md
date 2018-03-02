@@ -8,10 +8,10 @@
 2. Ellenőrizd a VirtualBox->File->Virtual Media Manager pontban, hogy nem létezik a CentOS7-es disk, ha ott van, akkor töröld.
 
 ### Virtuális gép importálása
-1. Hozd létre a D:\Work\VirtualBox könyvtárat (ha ott van már és nincs másnak a virtuális gépe benne, akkor törölj belőle mindent)
+1. Hozd létre a C:\Work\VirtualBox könyvtárat (ha ott van már és nincs másnak a virtuális gépe benne, akkor törölj belőle mindent)
 2. VirtualBox-ban:
-- Ellenőrizd: File->Preferences->General->Default Machince (Fájl->Beállítások->Általános->Alapértelmezett gép mappa) folder beállítása: D:\Work\VirtualBox
-- Import Appliance: D:\VPCImages\PAAS\student2018.ova
+- Ellenőrizd: File->Preferences->General->Default Machince (Fájl->Beállítások->Általános->Alapértelmezett gép mappa) folder beállítása: C:\Work\VirtualBox
+- Import Appliance: C:\VPCImages\PAAS\student2018.ova
 - Ellenőrizd a wizard utolsó lépésénél, hogy jó útvonal került-e be
 
 ## VirtualBox CentOS információk
@@ -105,7 +105,7 @@ dnsmasq config fájl: /etc/NetworkManager/dnsmasq.d
 
 ## OpenShift témához
 - OpenShift dashboard: https://bmepaas-master.openshift.local:8443
-- Lokális OpenShift elindítása: oc cluster up (kiírja az indítás után, hogyan érhető el)
+- Lokális OpenShift elindítása: sudo systemctl start openshift
 
 ## Jegyzőkönyv
 
