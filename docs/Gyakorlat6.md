@@ -64,7 +64,7 @@ oc patch dc myapp -p '{"spec":{"strategy":{"type":"Recreate"}}}'
 ### Célja, leírás
 A gyakorlat célja, hogy kipróbáljátok a különböző deployment stratégiákat.
 
-**Deployment Triggerek**
+**Blue/Green deployment**
 ![XaaS](../common/images/abdeployment.png)
 A teljes alkalmazás stack ki van telepítve két példányban és egy paranccsal eldönthető, hogy éppen melyiket érjék el a végfelhasználók
 ```shell
@@ -80,6 +80,15 @@ oc new-app https://github.com/devops-with-openshift/bluegreen#green --name=green
 oc patch route/bluegreen -p '{"spec":{"to":{"name":"green"}}}'
 
 ```
+**A/B deployment**
+Több verzió is ki van telepítve és bizonyos százalékban/vagy egyéb feltételek mentén valaki az egyik, valaki a másik verziót látja.
+```shell
+oc annotate route/ab haproxy.router.openshift.io/balance=roundrobin
+oc set route-backends ab cats=100 city=0
+```
+**Canary deployment**
+Több verzió is ki van telepítve és bizonyos feltételek mentén engedjük rá a felhasználókat az új megoldásra. Ehhez már HAProxy template-et kell konfigurálni.
+
 
 ### Jegyzőkönyvhöz
 Nincs feladat.
