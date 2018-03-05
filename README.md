@@ -51,8 +51,8 @@ A labor célja a következő témák áttekintése:
 [A gyakorlat itt érhető el](docs/Gyakorlat4.md)
 
 # Opcionális gyakorlatok - választható sorrendben
-## Gyakorlat 5. - Hálózat
+## Gyakorlat 5. - OpenShift Skálázási parancsok
 [A gyakorlat itt érhető el](docs/Gyakorlat5.md)
-## Gyakorlat 6. - OpenShift Skálázási parancsok
+## Gyakorlat 6. - Hálózat
 [A gyakorlat itt érhető el](docs/Gyakorlat6.md)
 
