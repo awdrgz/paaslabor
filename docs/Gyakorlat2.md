@@ -29,6 +29,8 @@ _További dokumentáció: https://docs.openshift.org/latest/welcome/index.html_
 
 ```shell
 oc login https://bmepaas-master.openshift.local:8443
+#vagy lokálisan:
+oc login https://localhost:8443 -u developer -p developer
 oc project XXXX
 ```
 
@@ -36,6 +38,8 @@ oc project XXXX
 ### oc CLI, fő komponensek
 ```shell
  oc login https://bmepaas-master.openshift.local:8443    
+#vagy lokálisan:
+oc login https://localhost:8443 -u developer -p developer
 ```
 
 Node-ok:
@@ -80,7 +84,8 @@ router-1-wksfx             1/1       Running   1          2d
 ### A feladatokhoz szükséges CLI parancsok:
 ```shell
 oc help
-oc login https://bmepaas-master.openshift.local:8443
+oc login -u system:admin
+oc new-project
 oc whoami
 oc status
 oc describe
@@ -97,13 +102,13 @@ Javasolt minta: NodeJS vagy Java
 A következőkön haladjatok végig és a megjelölt adatokat gyűjtsétek be a jegyzőkönyvhöz:
 
 1. Hozzatok létre egy alkalmazást a saját useretekkel a Dashboardon. A kiválasztott Git projektet nézzétek át a github-os linkjén. Érdemes átnézni, megérteni, hogy mi is fog fordulni, települni.
-2. Kövsd a telepítési folyamatot. Build logokat érdemes megnézni.
+2. Kövesd a telepítési folyamatot. Build logokat érdemes megnézni.
 3. Ellenőrizd, hogy böngészőből eléred az alkalmazást és működik-e!
 4. A bemutató alapján nézd végig a Dashboard-on, hogy mik is jöttek létre, milyen információkat látsz.
 5. Ugyanígy nézd át az oc CLI -vel is a projektet, a POD-od, a service-t.
-6. Derítsd ki, hogy melyik Node-ra (gépre) települt ki és milyen IP-n port-on hallagatózik
+6. Derítsd ki, hogy mi a container id-ja az alkalmazásnak, azaz milyen futó Docker container példányban fut az alkalmazás?
 
-_Hint: ezek a parancsok lesznek hasznotokra: oc new-app, oc get pods, oc get svc stb._
+_Hint: ezek a parancsok lesznek hasznotokra: oc new-app, oc get pods, oc get svc, oc describe pod stb._
 
 ### Jegyzőkönyvhöz
 Írd le a 6. pont eredményét és azt, hogy hogyan derítetted ki.
