@@ -1,4 +1,4 @@
-# Gyakorlat 6. - Alkalmazásfejlesztés OpenShift platformon
+# Gyakorlat 3. - Alkalmazásfejlesztés OpenShift platformon
 
 ## Tudnivalók
 [Fontos információk](Tudnivalok.md)
