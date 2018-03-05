@@ -91,4 +91,4 @@ Több verzió is ki van telepítve és bizonyos feltételek mentén engedjük r�
 
 
 ### Jegyzőkönyvhöz
-Nincs feladat.
+Válaszold meg a témához kapcsolódó kérdést.
