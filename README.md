@@ -57,3 +57,5 @@ A labor célja a következő témák áttekintése:
 ## Gyakorlat 6. - Hálózat
 [A gyakorlat itt érhető el](docs/Gyakorlat6.md)
 
+---
+**Labor értékelése:** [itt](https://goo.gl/forms/xBh9tuN6bsIne56Z2)
