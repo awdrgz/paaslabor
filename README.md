@@ -28,7 +28,6 @@ A labor célja a következő témák áttekintése:
   - OpenShift architektúra áttekintése ,
   - OpenShift alapfogalmak áttekintése(Service, Pod, Route).
 
-[Labor értékelése](https://goo.gl/forms/xBh9tuN6bsIne56Z2)
 ---
 
 # Elméleti áttekintés
