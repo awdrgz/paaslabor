@@ -30,7 +30,7 @@ _További dokumentáció: https://docs.openshift.org/latest/welcome/index.html_
 ```shell
 oc login https://bmepaas-master.openshift.local:8443
 #vagy lokálisan:
-oc login https://localhost:8443 -u developer -p developer
+oc login -u system:admin
 oc project XXXX
 ```
 
@@ -39,7 +39,7 @@ oc project XXXX
 ```shell
  oc login https://bmepaas-master.openshift.local:8443    
 #vagy lokálisan:
-oc login https://localhost:8443 -u developer -p developer
+oc login -u system:admin
 ```
 
 Node-ok:
