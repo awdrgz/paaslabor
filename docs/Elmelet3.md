@@ -8,7 +8,7 @@ A következő problémákra kell _még_ megoldás:
 - Tenant/Project izoláció (egy PaaS megoldásban nem láthatják egymás erőforrásait/projektjeit/alkalmazásait)
 
 Ezekre a problémákra vannak létező megoldások, technológiák:
-- Kubernetes, Docker Compose, Docker Swarm - konténer menedzsment
+- Kubernetes, Docker Compose, Docker Swarm - konténer menedzsment (Scheduling + Scaling)
 - Alkalmazásfejlesztési módszertanok, eszközök: Git vagy más SCM, Jenkins,...
 - Hálózati eszközök: Open vSwitch, Linux kernel technológiák
 - Monitorozás: Hawkular
@@ -19,7 +19,7 @@ Az OpenShift az előbbi problémákra megoldást nyújt, ráépülve a Docker ko
 ![origin](../common/images/openshift_vs_origin.png)
 
 # Alapfogalmak
-- **Project**: adminisztratív izoláció, az egyes szállítók külön-külön egymástól izolálva dolgozhatnak. A Node-ot kivéve minden OpenShift entitás/resource Project scopeú.
+- **Project**: adminisztratív izoláció, az egyes szállítók külön-külön egymástól izolálva dolgozhatnak egy-egy projekten. A Node-ot kivéve minden OpenShift entitás/resource Project scopeú.
 - **User**: az OpenShift felhasználói, akik tevékenysége jogosultságkezeléssel korlátozható
 - **Container, Image, Registry**: Az OpenShift a Docker-t használja konténer technológiaként ezért ezek pontosan a Docker foglamak.
 - **Pod**: Egy vagy több konténer, közös tárterülettel, hálózattal. Telepítési, management egység.
@@ -92,6 +92,22 @@ oc new-app          --új alkalmazás létrehozása
 #stb. lsd. gyakorlati anyagokban
 ```
 
+# OpenShift skálázási lehetőségek
+![scaling](../common/images/openshift_arch3.png)
+## Replication Controller-ek
+Felelősek, hogy mindig a meghatározott számú Pod fusson. Pl. ha leáll egy, akkor indít újat, stb.
+Nem felelős azért, hogy mennyi is ez a Pod szám. Nem figyel forgalmat, terhelést, nem kalkulálja ki ezt a számot, csak végrehajt.
+Runtime is állítható, de redeployment esetén csak akkor lesz érvényes, ha DC szinten állítottuk be.
+
+## Autoscaling
+A Pod-ok erőforrás igényei alapján automatikus skálázás is lehetséges.
+
+- A Pod-ok létrehozásakor meg lehet adni a szükséges resource szükségleteket (Requests).
+- Előbbi alapján már kalkulálható, hogy a Pod hol jöjjön létre (scheduling)
+- Limit-ek, felső korlátok is megadhatóak resource-onként Pod-okhoz (mennyi a becsült korlát)
+
+https://www.youtube.com/watch?v=lk1IXYOs3WM
+
 # OpenShift hálózati kommunikáció
 A következő hálózati problémákra ad megoldást az OpenShift
 - Routing: hogyan érhetőek el kívülről az alkalmazásaink a PaaS-on
@@ -155,18 +171,4 @@ A->eth0->vethA->br0->vxlan0->br0->vethB->eth0->B
 3. A és B konténer más hoston van, B pl. egy internetes cím: A(eth0,vethA)
 A->eth0->vethA->br0->tun0->...->eth0->B
 
-# OpenShift skálázási lehetőségek
-![scaling](../common/images/openshift_arch3.png)
-## Replication Controller-ek
-Felelősek, hogy mindig a meghatározott számú Pod fusson. Pl. ha leáll egy, akkor indít újat, stb.
-Nem felelős azért, hogy mennyi is ez a Pod szám. Nem figyel forgalmat, terhelést, nem kalkulálja ki ezt a számot, csak végrehajt.
-Runtime is állítható, de redeployment esetén csak akkor lesz érvényes, ha DC szinten állítottuk be.
 
-## Autoscaling
-A Pod-ok erőforrás igényei alapján automatikus skálázás is lehetséges.
-
-- A Pod-ok létrehozásakor meg lehet adni a szükséges resource szükségleteket (Requests).
-- Előbbi alapján már kalkulálható, hogy a Pod hol jöjjön létre (scheduling)
-- Limit-ek, felső korlátok is megadhatóak resource-onként Pod-okhoz (mennyi a becsült korlát)
-
-https://www.youtube.com/watch?v=lk1IXYOs3WM
