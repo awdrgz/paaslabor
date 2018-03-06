@@ -27,12 +27,12 @@ https://docs.docker.com/engine/reference/glossary
 ![containerlayers](../common/images/container-layers.jpg)
 
 ## Perzisztens tárolók
-- A docker containerek nem perzisztensek, tehát leállítások esetén a tárolt adatok elvesznek
+- A docker containerek nem perzisztensek, tehát leállítások esetén a tárolt adatok elvesz(het)nek
 - Perzisztens tár becsatolható a konténerekbe
 ![sharedvolumes](../common/images/shared-volume.jpg)
 
 ## Hálózat
-- A konténerek hálózatot tekintve is izoláltak (net namespace).
+- A konténerek hálózatot tekintve is izoláltak lehetnek a hosttól (net namespace).
 - Egy konténer jellemzően egy hoston futtatott Linux Bridge-hez kapcsolódik.
 - A konténer explicit kinyithatja a hálózati portjait (port forward).
 - A konténerek összeköthetőek egymással.
