@@ -10,6 +10,7 @@ Az értékelés/érdemjegy alapja az alábbi beküldött Google Forms jegyzőkö
 A jegyzőkönyvben tesztkérdések és a gyakorlatok anyagaiból felmásolandó feladatok is vannak. Érdemes menet közben tölteni és egy külön dokumentumban külön is tárolni, nehogy elvesszen, vagy később is be tudjátok küldeni!
  
 [Kitöltendő jegyzőkönyv 03.07-i csoport](https://goo.gl/forms/GhP9lMUBi5h5NS5p1)
+
 [Kitöltendő jegízőkönyv 03.08-i csoport](https://goo.gl/forms/QIsr0fqCsCIGuLqp2)
 
 **A jegyzőkönyvet a labor hetének a végéig (vasárnap 23:59-ig) küldjétek be!**
