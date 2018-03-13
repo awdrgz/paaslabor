@@ -63,7 +63,7 @@ Javasolt web szerver: nginx (de lehet más is)
 A következőket biztosan meg kell oldani:
 
 1. A konténer belső portjának megnyitása a host felé (_docker run -P_)
-2. Figyeljétek meg a konténer státuszát! élettartamát! Ha megváltoztattok benne pl. egy index.html-et és leállítjátok, akkor következő indításnál már nem lesz ott. Miért? El lehet-e indítani egy korábban módosított containtert (docker ps -a)?
+2. Figyeljétek meg a konténer státuszát! élettartamát! Ha megváltoztattok benne pl. egy index.html-et és leállítjátok, akkor egy új konténer indításánál nem lesz ott. Miért? El lehet-e indítani egy korábban módosított konténert (docker ps -a)?
 3. (Opcionális) Esetleg köteg becsatolással is megoldható (docker run -v ...).
 
 _Hint: ezek a parancsok lesznek hasznotokra: docker run -p, stb._
