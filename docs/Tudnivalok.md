@@ -1,6 +1,9 @@
 # Tudnivalók
 
 ## VirtualBox importálás
+
+Otthoni munkához, a gyakorlatok befejezéséhez a virtuális gép letölthető innen (BME hálóról): http://ossrv1.aut.bme.hu/student2018.ova
+
 ### Korábbi virtuális gép törlése
 Óvatosan, nehogy más virtuális gépét töröljétek ki!
 
