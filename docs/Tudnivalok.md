@@ -4,6 +4,8 @@
 
 Otthoni munkához, a gyakorlatok befejezéséhez a virtuális gép letölthető innen (BME hálóról): http://ossrv1.aut.bme.hu/student2018.ova
 
+Labor során a desktop gépen is megvan itt: C:\VPCImages\PAAS\student2018.ova
+
 ### Korábbi virtuális gép törlése
 Óvatosan, nehogy más virtuális gépét töröljétek ki!
 
