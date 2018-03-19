@@ -4,6 +4,7 @@
 - Linux kernel technológiákra épülő izolált környezet (lightwight VM ~ nincs Hypervisor réteg)
 - Izolált névterek (fs, net, ps, mount, ipc,...)
 - Kiforrott, gyors, biztonságos, optimális erőforrás használat
+- Példa: https://ericchiang.github.io/post/containers-from-scratch/
 
 ![containervsvm](../common/images/ContainerVsVM.jpg)
 
