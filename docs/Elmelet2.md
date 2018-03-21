@@ -1,10 +1,13 @@
 # Docker
 ## Konténerek
 - LXC, BSD Jails, Docker
+  - Chroot circa 1982,FreeBSD Jails circa 2000,Solaris Zones circa 2004, LXC circa 2008,Systemd-nspawn circa 2010-2013
+  - Docker circa 2013
 - Linux kernel technológiákra épülő izolált környezet (lightwight VM ~ nincs Hypervisor réteg)
 - Izolált névterek (fs, net, ps, mount, ipc,...)
 - Kiforrott, gyors, biztonságos, optimális erőforrás használat
 - Példa konténer létrehozásra alap linux eszköztárral: https://ericchiang.github.io/post/containers-from-scratch/
+
 
 ![containervsvm](../common/images/ContainerVsVM.jpg)
 
