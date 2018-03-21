@@ -2,7 +2,7 @@
 
 ## VirtualBox importálás
 
-Otthoni munkához, a gyakorlatok befejezéséhez a virtuális gép letölthető innen (BME hálóról): http://ossrv1.aut.bme.hu/student2018.ova
+Otthoni munkához, a gyakorlatok befejezéséhez a virtuális gép letölthető innen (BME hálóról): curl -L0 http://ossrv1.aut.bme.hu/student2018.ova
 
 Labor során a desktop gépen is megvan itt: C:\VPCImages\PAAS\student2018.ova
 
@@ -133,6 +133,7 @@ A gyakorlaton használt virtuális gépet is elvihetitek!
 - https://learn.openshift.com
 
 ## Hasznos linkek, blogok
+- https://github.com/veggiemonk/awesome-docker
 - http://www.opensourcerers.org/tag/openshift/ 
 - http://training.play-with-docker.com/
 - https://learn.openshift.com
